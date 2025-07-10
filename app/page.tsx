@@ -84,7 +84,7 @@ export default function HomePage() {
                 <Link href="/metodologias-ativas">Ver Metodologias</Link>
               </Button>
             </CardContent>
-            z
+            
           </Card>
 
           <Card className="hover:shadow-lg transition-shadow">
