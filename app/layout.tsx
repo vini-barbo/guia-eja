@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className + 'bg-[#F3F7FD]'} >
+      <body className={inter.className} >
         <Navbar />
         <main>{children}</main>
         <Footer />
