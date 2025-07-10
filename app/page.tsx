@@ -17,14 +17,12 @@ export default function HomePage() {
             recursos práticos e orientações pedagógicas especializadas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="text-lg px-8 py-3">
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3">
               <Link href="/guia">
                 Começar Agora <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3 bg-transparent">
-              <Link href="/sobre">Saiba Mais</Link>
-            </Button>
+
           </div>
         </div>
       </section>
@@ -147,73 +145,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Quick Access Section */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Acesso Rápido</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Características dos Alunos</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/guia/caracteristicas">Acessar</Link>
-                </Button>
-              </CardContent>
-            </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Metodologias Ativas</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/guia/metodologias">Acessar</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Recursos & Modelos</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/recursos">Acessar</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Blog & Atualizações</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/blog">Acessar</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="container mx-auto px-4 py-16 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">Pronto para transformar suas aulas?</h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Junte-se a centenas de educadores que já estão usando nosso guia para ensinar computação de forma efetiva na
-            EJA.
-          </p>
-          <Button asChild size="lg" className="text-lg px-8 py-3">
-            <Link href="/guia">
-              Começar Agora <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
-        </div>
-      </section>
     </div>
   )
 }
