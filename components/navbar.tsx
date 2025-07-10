@@ -19,7 +19,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b !bg-[#1A7F88] !text-white backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -35,7 +35,7 @@ export default function Navbar() {
                 <NavigationMenuLink asChild>
                   <Link
                     href="/"
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 !bg-transparent"
                   >
                     Início
                   </Link>
@@ -43,24 +43,13 @@ export default function Navbar() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link
-                    href="/sobre"
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
-                  >
-                    Sobre
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Guia de Ensino</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="!bg-transparent">Guia de Ensino</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid w-[400px] p-2">
                     <NavigationMenuLink asChild>
                       <Link
-                        href="/guia/caracteristicas"
-                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+                        href="/perfil-alunos"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground" 
                       >
                         <div className="text-sm font-medium leading-none group-hover:underline">
                           Características dos Alunos
@@ -117,29 +106,20 @@ export default function Navbar() {
                 <NavigationMenuLink asChild>
                   <Link
                     href="/recursos"
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 !bg-transparent"
                   >
                     Recursos & Modelos
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link
-                    href="/blog"
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
-                  >
-                    Blog
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
+
 
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <Link
                     href="/contato"
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 !bg-transparent"
                   >
                     Contato
                   </Link>
@@ -170,14 +150,12 @@ export default function Navbar() {
                   <Link href="/" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                     Início
                   </Link>
-                  <Link href="/sobre" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                    Sobre
-                  </Link>
+
                   <div className="space-y-2">
                     <div className="text-lg font-medium">Guia de Ensino</div>
                     <div className="pl-4 space-y-2">
                       <Link
-                        href="/guia/caracteristicas"
+                        href="/perfil-alunos"
                         className="block text-sm text-muted-foreground"
                         onClick={() => setIsOpen(false)}
                       >
@@ -209,9 +187,7 @@ export default function Navbar() {
                   <Link href="/recursos" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                     Recursos & Modelos
                   </Link>
-                  <Link href="/blog" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                    Blog
-                  </Link>
+
                   <Link href="/contato" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                     Contato
                   </Link>

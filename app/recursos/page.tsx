@@ -432,21 +432,7 @@ export default function RecursosPage() {
           </TabsContent>
         </Tabs>
 
-        {/* Call to Action */}
-        <section className="mt-16 text-center bg-gray-50 rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-4">Não encontrou o que procurava?</h2>
-          <p className="text-gray-600 mb-6">
-            Sugerir novos recursos ou compartilhe seus próprios materiais com a comunidade.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild>
-              <Link href="/contato">Sugerir Recurso</Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href="/blog">Ver Mais no Blog</Link>
-            </Button>
-          </div>
-        </section>
+  
       </div>
     </div>
   )

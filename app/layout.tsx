@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Guia de Computação para Professores da EJA",
   description:
     "Apoie seus alunos da Educação de Jovens e Adultos no aprendizado de computação com metodologias ativas e recursos práticos.",
-    generator: 'v0.dev'
+    
 }
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body className={inter.className + 'bg-[#F3F7FD]'} >
         <Navbar />
         <main>{children}</main>
         <Footer />

@@ -64,7 +64,7 @@ export default function GuiaPage() {
                   <li>• Desafios e barreiras</li>
                 </ul>
                 <Button asChild className="w-full group-hover:bg-green-600 transition-colors">
-                  <Link href="/guia/caracteristicas">
+                  <Link href="/perfil-alunos">
                     Explorar Seção <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -270,7 +270,7 @@ export default function GuiaPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link href="/guia/caracteristicas">Começar pelo Perfil dos Alunos</Link>
+              <Link href="/perfil-alunos">Começar pelo Perfil dos Alunos</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link href="/recursos">Ver Recursos Disponíveis</Link>

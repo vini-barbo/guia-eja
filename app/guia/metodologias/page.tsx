@@ -294,7 +294,7 @@ export default function MetodologiasPage() {
         <section className="border-t pt-8">
           <div className="flex justify-between">
             <Button asChild variant="outline">
-              <Link href="/guia/caracteristicas">
+              <Link href="/perfil-alunos">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Características dos Alunos
               </Link>
